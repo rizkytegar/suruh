@@ -1,3 +1,12 @@
 #!/usr/bin/env php
 <?php
-?>
+class suruh
+{
+    public function action($args)
+    {
+        $script = array_shift($args);
+
+        print($args[0]."\n");
+    }
+}
+(new suruh)->action($argv);
