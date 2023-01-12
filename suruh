@@ -1,12 +1,19 @@
 #!/usr/bin/env php
 <?php
-class suruh
-{
-    public function action($args)
-    {
-        $script = array_shift($args);
 
-        print($args[0]."\n");
-    }
-}
+/*
+
+Please change the library location according to the lib folder location
+
+
+- suruh
+- /lib/suruh_lib.php
+- /bin/Pattern.php
+
+*/
+
+require_once('./lib/suruh_lib.php');
+
 (new suruh)->action($argv);
+
+?>
