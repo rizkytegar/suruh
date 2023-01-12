@@ -3,16 +3,13 @@
 
 /*
 
-Please change the library location according to the lib folder location
-
-
-- suruh
-- /lib/suruh_lib.php
-- /bin/Pattern.php
+Change the library location according to the lib folder location
 
 */
 
-require_once('./lib/suruh_lib.php');
+require_once('./lib/Suruh_lib.php');
+
+require_once('./bin/Pattern.php');
 
 (new suruh)->action($argv);
 
